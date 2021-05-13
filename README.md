@@ -1,5 +1,5 @@
 # timer-backend
-Built with Typescript, Node.js, Graphql, Apollo-Graphql-Server
+Built with Typescript, Node.js, Graphql, Apollo-Graphql-Server, MongoDB Database
 
 ### Database design
 
@@ -70,8 +70,11 @@ scalar DateTime
   }
 ```
 
-### Database screenshot
+### Graphql Playground
+![image](https://user-images.githubusercontent.com/49583931/118184237-b84d3780-b400-11eb-9356-9f11a98e9db5.png)
 
+### MongoDB screenshot
+![image](https://user-images.githubusercontent.com/49583931/118184344-d74bc980-b400-11eb-979a-54938d7a173d.png)
 
 ### How to run
 
