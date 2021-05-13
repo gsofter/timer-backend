@@ -1,11 +1,9 @@
-import express from 'express';
+import { ApolloServer, gql } from "apollo-server";
+import{ schema } from "./schema/timeentry-schema";
+import { resolvers } from "./resolvers/timeentry-resolver";
 
-const app = express();
+const server = new ApolloServer({ typeDefs: schema, resolvers });
 
-app.get('/', (req, res) => {
-    res.send("Hello world");
-})
-
-app.listen(3000, () => {
-    console.log('The application is listening on port 3000!');
-})
+server.listen().then(({ url }) => {
+  console.log(`🚀  Server ready at ${url}`);
+});
