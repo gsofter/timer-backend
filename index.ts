@@ -1,11 +1,8 @@
-import { ApolloServer, gql } from 'apollo-server';
+import { ApolloServer } from 'apollo-server';
 import { schema } from './schema/timeentry-schema';
 import { resolvers } from './resolvers/timeentry-resolver';
 import mongoose from 'mongoose';
 const server = new ApolloServer({ typeDefs: schema, resolvers });
-
-console.log(encodeURIComponent('eUjy%YKP2k-TvdJ'));
-
 async function start() {
   try {
     await mongoose.connect('mongodb+srv://steve:eUjy%25YKP2k-TvdJ@cluster0.i8mtr.mongodb.net/himama-timer', {

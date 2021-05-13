@@ -18,11 +18,12 @@ export const schema = gql`
   }
 
   type Query {
-    getTimeEntries(userId: String): [TimeEntry]
+    getTimeEntries: [TimeEntry]
   }
 
   type Mutation {
     createTimeEntry(request: TimeEntryRequest): Boolean
     updateTimeEntry(entryId: String, request: TimeEntryRequest): Boolean
+    removeTimeEntry(entryId: String): Boolean
   }
 `

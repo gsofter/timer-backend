@@ -4,7 +4,7 @@ export const resolvers = {
   Query: {
     getTimeEntries(root: any, args: any) {
       console.log('Query: getTimeEntries', args)
-      return Service.getTimeEntries(args.request);
+      return Service.getTimeEntries();
     },
   },
 
@@ -15,7 +15,11 @@ export const resolvers = {
     },
     updateTimeEntry(root: any, args: any) {
       console.log('Mutation: createTimeEntry', args);
-      return Service.updateTimeEntry(args.id, args.request);
+      return Service.updateTimeEntry(args.entryId, args.request);
+    },
+    removeTimeEntry(root: any, args: any) {
+      console.log('Mutation: createTimeEntry', args);
+      return Service.removeTimeEntry(args.entryId);
     },
   },
 };
