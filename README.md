@@ -1,5 +1,5 @@
 # timer-backend
-Built with Typescript Node.js
+Built with Typescript, Node.js, Graphql, Apollo-Graphql-Server
 
 ### Database design
 
