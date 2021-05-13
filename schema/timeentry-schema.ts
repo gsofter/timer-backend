@@ -22,7 +22,7 @@ export const schema = gql`
   }
 
   type Mutation {
-    createTimeEntry(entryId: String, request: TimeEntryRequest): Boolean
+    createTimeEntry(request: TimeEntryRequest): Boolean
     updateTimeEntry(entryId: String, request: TimeEntryRequest): Boolean
   }
 `
