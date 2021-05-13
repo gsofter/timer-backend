@@ -10,7 +10,7 @@ async function start() {
       useUnifiedTopology: true,
     });
 
-    server.listen().then(({ url }) => {
+    server.listen(process.env.PORT || 8000).then(({ url }) => {
       console.log(`🚀  Server ready at ${url}`);
     });
   } catch (e) {
