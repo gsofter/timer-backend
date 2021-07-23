@@ -3,7 +3,7 @@ import * as Service from '../controllers';
 export const resolvers = {
   Query: {
     getTimeEntries(root: any, args: any) {
-      console.log('Query: getTimeEntries', args)
+      console.log('Query: getTimeEntries', args);
       return Service.getTimeEntries();
     },
   },

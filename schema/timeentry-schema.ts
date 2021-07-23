@@ -1,4 +1,4 @@
-import { gql } from "apollo-server-core";
+import { gql } from 'apollo-server-core';
 
 export const schema = gql`
   scalar DateTime
@@ -26,4 +26,4 @@ export const schema = gql`
     updateTimeEntry(entryId: String, request: TimeEntryRequest): Boolean
     removeTimeEntry(entryId: String): Boolean
   }
-`
+`;
